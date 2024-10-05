@@ -15,13 +15,13 @@ public class ArithException02 {
 			for (int i = 0; i <= name.length; i++)
 				System.out.println(name[i]);
 			
+		} catch (Exception e) {		// 이 문장은 예외처리의 마지막에 위치해야 함
+			System.out.println("예외발생");		
+			System.out.println(e.toString());
 		} catch (ArithmeticException ar) {
 			System.out.println("0으로 나누었음");
 		} catch (ArrayIndexOutOfBoundsException ai) {
 			System.out.println("배열 범위 벗어난 예외 발생");
-		} catch (Exception e) {
-			System.out.println("예외발생");
-			System.out.println(e.toString());
-		}
+		
 	}
 }
