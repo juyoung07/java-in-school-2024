@@ -19,6 +19,15 @@ public class VectorEx {
 		
 		// 백터의 실제 용량
 		System.out.println("백터의 실제 용량 : " + v.capacity());
+		
+		int sum = 0;
+		for (int i = 0; i < v.size(); i++) {
+			System.out.println((i+1) + "번 : " + v.get(i));
+			sum += v.get(i);
+		}
+		
+		
+		
 
 	}
 
