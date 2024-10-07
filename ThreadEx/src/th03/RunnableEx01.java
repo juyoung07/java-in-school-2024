@@ -1,6 +1,6 @@
 package th03;
 
-class Top extends Thread {
+class Top implements Runnable {
 	public void run() {
 		for (int i = 1; i < 50; i++) {
 			try { Thread.sleep(50); } catch (Exception e) {}
